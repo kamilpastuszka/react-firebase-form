@@ -1,0 +1,37 @@
+{
+  "name": "react-firebase-form",
+  "version": "1.0.0",
+  "description": "A React-Firebase Form App",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack",
+    "dev-server": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamilpastuszka/react-firebase-form.git"
+  },
+  "author": "Kamil Pastuszka",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.19.1",
+    "react": "^16.3.2",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.3.2",
+    "react-router-dom": "^4.2.2",
+    "validator": "^10.2.0",
+    "webpack": "^4.8.1",
+    "webpack-cli": "^2.1.3",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "devDependencies": {},
+  "bugs": {
+    "url": "https://github.com/kamilpastuszka/react-firebase-form/issues"
+  },
+  "homepage": "https://github.com/kamilpastuszka/react-firebase-form#readme"
+}
