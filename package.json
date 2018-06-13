@@ -4,8 +4,7 @@
   "description": "A React-Firebase Form App",
   "main": "index.js",
   "scripts": {
-    "webpack": "webpack",
-    "dev-server": "webpack-dev-server"
+    "start": "webpack && webpack-dev-server"
   },
   "repository": {
     "type": "git",

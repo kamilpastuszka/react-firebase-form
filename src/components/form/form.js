@@ -82,11 +82,17 @@ class FormData extends Component {
     this.props.history.push('/thankyou');
   }
 
-  validate(field, value, validator) {
-    if (field.fieldName === 'Email') {
-      field = !validator.isEmpty(value) && validator.isEmail(value);
-    } else {
-      field = !validator.isEmpty(value);
+  validate(field, value) {
+    const isFilled = value => !validator.isEmpty(value)
+    const { isEmpty, isByteLength, isEmail } = validator;
+      if (field.fieldName === 'Name') {
+        field = isFilled (value) && isByteLength(value, {min: 2, max: 30}) && field
+      } else if (field.fieldName === 'Email') {
+        field = isFilled (value) && isEmail(value) && field
+      } else if (field.fieldName === 'Phone') {
+        field = isFilled (value) && isByteLength(value, {min: 9, max: 20}) && field
+      } else if (field.fieldName === 'Comment') {
+        field = isFilled (value) && isByteLength(value, {min: 10 , max: 500}) && field
     }
     return field;
   }
