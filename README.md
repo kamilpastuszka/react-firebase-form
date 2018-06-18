@@ -15,4 +15,4 @@ npm start - to run the application (Webpack build will be created and webpack-de
 
 
 ## Image
-<img src="img.png" width="400px">
+<img src="img.png" width="650px">
